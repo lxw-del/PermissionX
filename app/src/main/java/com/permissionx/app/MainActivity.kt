@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainBind.root)
 
         mainBind.makeCallBtn.setOnClickListener{
-            PermissionX.request(this, arrayOf(android.Manifest.permission.CALL_PHONE)){allGranted,deniedList ->
+            PermissionX.request(this, arrayOf(android.Manifest.permission.CALL_PHONE,android.Manifest.permission.WRITE_EXTERNAL_STORAGE)){allGranted,deniedList ->
                 if (allGranted){
                     //打电话
                     call()

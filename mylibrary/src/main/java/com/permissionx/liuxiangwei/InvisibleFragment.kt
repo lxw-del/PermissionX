@@ -34,9 +34,4 @@ class InvisibleFragment:Fragment() {
         //执行回调函数
         callback?.let { it(allGranted,deniedList) }
     }
-
-
-
-
-
 }
